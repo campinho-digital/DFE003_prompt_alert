@@ -69,6 +69,7 @@ button {
     width: 500px;
     height: 200px;
     margin: 20px;
+    clear: both;
 }
 
 footer {
