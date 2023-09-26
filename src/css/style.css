@@ -47,7 +47,9 @@ h2 {
 
     margin: 2%;
 }
-
+hr {
+    border: 2px solid rgb(87, 38, 185);
+}
 form {
     display: flex;
     flex-direction: row;
