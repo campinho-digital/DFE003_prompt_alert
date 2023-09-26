@@ -8,6 +8,7 @@ main {
 }
 
 header {
+    border: 2px solid #000;
     background: blueviolet;
     font-size: 1.5em;
     padding: 15px;
@@ -68,6 +69,14 @@ button {
     background-color: blueviolet;
     border: 2px solid #000;
     padding: 5px;
+}
+
+button:hover {
+    background: white;
+    color: blueviolet;
+    transition: all .5s;
+    cursor: pointer;
+
 }
 
 #container {
