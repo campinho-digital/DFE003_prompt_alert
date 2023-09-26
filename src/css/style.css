@@ -6,17 +6,33 @@
 main {
     margin: 35px;
 }
+p {
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: blueviolet;
+}
 
+span {
+    font-weight: bold;
+    font-size: 1.7em;
+    background: #000;
+    color: #c6c6c6;
+}
 
 h1 {
     display: block;
     color: red;
     text-align: center;
+    font-size: 2em;
 }
 h2 {
     display: block;
     color: rebeccapurple;
     font-weight: bolder;
+    text-align: center;
+    font-size: 2em;
+
+    margin: 2%;
 }
 
 form {
@@ -42,6 +58,12 @@ button {
     padding: 5px;
 }
 
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .resultados {
     border: 2px solid black;
     width: 500px;

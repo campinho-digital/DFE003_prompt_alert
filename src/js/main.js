@@ -8,7 +8,7 @@ function dobroNum() {
   let dobro = (num *= 2);
   alert(`O dobro do valor é igual a ${dobro}`);
 
-  
+  valorDobro.innerHTML = `<h1>O dobro do valor</h1><hr><p>O dobro do valor é</p> <span>R$${dobro}<span>`
 }
 
 // Elabore um programa que calcule o valor do jantar, sendo o valor total do jantar composto pela conta junto com a taxa de atendimento do garçom.
@@ -26,7 +26,7 @@ function jantarValor() {
 
   alert("O valor final do jantar é de: " + "R$" + custoComposto);
   
-  valorJantar.innerHTML ="<h1>Valor total jantar</h1>" + "<hr>" + "R$" + custoComposto;
+  valorJantar.innerHTML = `<h1>Valor total jantar</h1><hr><p>O valor final do jantar com 25% do valor é</p> <span>R$${custoComposto}<span>`
   
 }
 
@@ -42,4 +42,6 @@ function contaPizza() {
   valorPorPessoa = Math.round(valorPorPessoa);
 
   alert(`Cada pessoa pagará aproximadamente R$${valorPorPessoa}`);
+
+  valorPizza.innerHTML = `<h1>Conta da Pizzaria</h1><hr><p>Cada pessoa deverá pagar</p> <span>R$${valorPorPessoa}<span>`
 }
