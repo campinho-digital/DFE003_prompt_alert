@@ -4,10 +4,43 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Campinho Digital - Prompt</title>
   </head>
-  <header></header>
+  <body>
+    <main>
+      <h1>Consulte os valores</h1>
+      <form>
+        <fieldset>
+          <legend>Dobro do valor</legend>
+          <button type="button" onclick="dobroNum()">Clique e descubra o dobro do valor</button>
+          </fieldset>
 
-  <body></body>
-  <script src="./main.js"></script>
+          <fieldset>
+          <legend>Valor total do jantar</legend>
+          <button type="button" onclick="jantarValor()">Clique e descubra o dobro do valor</button>
+          </fieldset>
+
+          <fieldset>
+          <legend>Conta da pizzaria</legend>
+          <button type="button" onclick="contaPizza()">Quanto cada pessoa deve pagar</button>
+          </fieldset>
+      </form>
+      <h2>Resultados</h2>
+      <div id="dobro" class="resultados dobro">
+        <h1>O dobro do valor</h1><hr>
+
+      </div>
+      <div id="jantar" class="resultados jantar">
+        <h1>Valor total jantar</h1><hr>
+
+      </div>
+      <div id="pizza" class="resultados pizza">
+        <h1>Conta da pizzaria</h1><hr>
+      </div>
+    </div>
+    </main>
+
+  </body>
+  <script src="./js/main.js"></script>
 </html>
