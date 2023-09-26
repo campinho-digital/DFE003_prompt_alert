@@ -12,7 +12,7 @@ function dobroNum() {
   } else {
     alert(`O dobro do valor é igual a ${dobro}`);
 
-    valorDobro.innerHTML = `<h1>Dobro</h1><hr><p>O dobro do valor é</p> <span>R$${dobro}<span>`;
+    valorDobro.innerHTML = `<h1>Dobro</h1><hr><p>O dobro do valor é</p> <span>${dobro}<span>`;
   }
 }
 
