@@ -1,102 +1,77 @@
-# Desafio Prompt Game
+## EXPLICANDO A IDEIA DO PROJETO
 
 ## Índice
 
-- [Desafio Prompt Game](#desafio-prompt-game)
-  - [Índice](#índice)
-  - [Resumo do projeto](#resumo-do-projeto)
-  - [Objetivos de aprendizagem](#objetivos-de-aprendizagem)
-    - [Git e GitHub:](#git-e-github)
-  - [Orientações:](#orientações)
-  - [Critérios de aceitação](#critérios-de-aceitação)
-  - [Desafio:](#desafio)
-    - [Lembre-se que essa sessão é opcional](#lembre-se-que-essa-sessão-é-opcional)
-  - [Dicas](#dicas)
+- [HTML](#HTML)
+  - [Contextualzando](#ExplicaHTML)
+- [CSS](#CSS)
+  - [Explicação](#ExplicaCSS)
+- [Git e GitHub:](#GIT-GITHUB)
+  - [Explicação](#ExplicaGit)
+- [Javascript](#Javascript)
+  - [Explicação](#ExplicaJS)
+- [Como linkei o HTML com o JavaScript:](#Ligação)
+  - [Explicação](#ExplicaConexao)
 
 ***
 
-## Resumo do projeto
+## HTML
 
-O que é preciso fazer? 
+### Contextualizando
 
-Você usará o que foi aprendido sobre entrada e saída de dados com `prompt()` e `alert()` para receber informações sobre o usuário da sua aplicação e em seguida exibi-las na tela. 
+Basicamente tentei assimilar várias funções distintas numa mesma tela, para que de algum modo, elas em conjunto fossem trazer um resultado dinâmico e objetivo.
+O primeiro passo foi definir um **main** e deixá-lo como o box central de todo projeto. E o principal foi definir um **box model** apropriado para o projeto, então eu pensei logo num formulário que poderia ser como ponte para aplicar o projeto. Para isso utilizei a tag **form** junto ao **legend** e um **button** para cada aplicação específica.
 
-O que deve ser feito: 
+![Esqueleto](./img/Esqueleto.png)
 
-- Elabore um programa que leia um numero e devolva para o usuário o dobro do número informado.
-
-
-~~~javascript
-
-  Entrada de dados: ler um número.
-  Processamento: calcular o dobro.
-  Saída: informar o resultado.
-
-~~~
-  
-- Elabore um programa que calcule o valor do jantar, sendo o valor total do jantar composto pela conta junto com a taxa de atendimento do garçom. 
-
-~~~javascript
-
-  Entrada de dados: ler o valor da conta.
-  Processamento: calcular junto com o valor do custo do garçom.
-  Saída: informar o resultado.
-
-~~~
-
-  
-- Elabore um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago por cliente. 
-
-~~~javascript
-
-  Entrada de dados: ler o valor da conta e a quantidade de clientes.
-  Processamento: calcular o valor a ser pago por cliente.
-  Saída: informar o resultado.
-
-~~~
+###### Imagem 1.0 - Esqueleto #######
 
 
-## Objetivos de aprendizagem
-  
-### JavaScript:
+## CSS
 
-- Saída de dados com `alert()`
-- Variáveis e constantes 
-- Entrada de dados com `prompt()`
-- Entrada de dados e uso de variáveis
+### Explicação
 
-### Git e GitHub:
+  Basicamente o visual da aplicação. Me preocupei com a estética obviamente, mas pensei em utilizar um display para deixar cada caixa bem distribuída do jeito que me agrada, então utilizei o display **block** , como também o display flex, conhecido também como **flexbox**, mas somente para deixar uma visualização menos poluída para o usuário final.
 
-- Uso de comandos de git: `git add` `git commit` `git pull` `git push`
-- Gerenciamento de repositorios de GitHub (clone e fork)
-
-## Orientações:
+![CSS](./img/CSS.png)
 
 
-- O projeto será feito individualmente.
-- O projeto deverá ser entregue subindo o seu código no GitHub (commit/push) em seguida o link do repositório deverá ser enviado na atividade na plataforma da Campinho Digital. 
+###### Imagem 2.0 - Com a estilização praticamente finalizada ######
 
-## Critérios de aceitação
-
-- Todas as perguntas e respostas precisam ser exibidas na tela. 
+## GIT-GITHUB
 
 
+### Explicação
 
+Para praticar todo conceito, eu fiz o forkei, conforme instruído. Após isso, na pasta forkada, criei uma branch, mesmo sendo uma pasta minha e após fazer todas alterações nessa árvore secundária, eu fiz um pull request para "solicitar" uma possível alteração, como não havia nada, não deu conflito e passou.
 
-## Desafio:
+### Para forkar
 
-Essa etapa é **opcional**. Caso queira implementar no seu projeto e aprofundar seus conhecimentos você pode tentar fazer com que as respostas sejam exibidas não apenas na janela 
-de `alert()` mas usar o proprio HTML para escrever as respostas na sua tela. 
+1. Fork um repositório (de outro usuário) que você deseja contribuir
+https: // github.com/ [OUTRO-USUÁRIO]/ [REPOSITÓRIO]
 
-#### Links utéis:
-[Introdução ao DOM](https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model/Introduction)
-[Adicionar JavaScript ao HTML](https://www.hostinger.com.br/tutoriais/como-adicionar-javascript-no-html)
+2. Clone seu repositório ‘forkado’ com seu nome de usuário
+git clone https://github.com/[SEU-USUÁRIO]/[REPOSITÓRIO]
 
-#### Lembre-se que essa sessão é opcional!
+### Para criar uma branch
+1. git checkout -b nomeBranch
+2. git commit -m "Minha nova Branch"
+3. git push --set-upstream origin nomeBranch
 
-## Dicas
+## Para sair da branch ou saber qual branch está
 
-- Certifique-se de estar com a sua maquina configurada de acordo com as aulas vistas anteriormente.
-- Assista o modulo de `prompt()` e `alert()`.
+#### git branch
+O próprio terminal informa qual branch você está
+#### git chechout master 
+Para voltar para a branch principal, ou outra, caso houver
+
+#### Pull Request
+Não era necessário, mas fiz um pull request no meu próprio repositório e após isso, fiz um merge. Indo no próprio repositório executando a opção de pull request e realizar o merge, que neste caso é apenas uma ramificação.
+
+## JAVASCRIPT
+Para resolver, fui exercício por exercício, na verdade, antes mesmo de começar tudo, eu já fiz as soluções como funções através do **function** para que elas fossem acionadas somente quando eu quisesse.
+
+## COMO LINKAR O JAVASCRIPT
+Existem maneiras de se fazer isso, no meu caso utilizei o evento "on click" do javascript, em que as funções são acionadas com um clique e com isso disparar um evento para realização das lógicas do programa. Para aparecer de fato no HTML, foi necessário pegar o id de cada elemento e atribuir seu valor no campo determinado, como neste caso, nas **divs**
 
 
