@@ -9,8 +9,8 @@
 - [Git e GitHub:](#GIT-GITHUB)
   - [Explicação](#ExplicaGit)
 - [Javascript](#JAVASCRIPT)
-  - [Explicação](#ExplicaJS)
-- [Como linkei o HTML com o JavaScript:](#Ligação)
+  - [Explicação](#JAVASCRIPT)
+- [Como linkei o HTML com o JavaScript:](#LINK)
   - [Explicação](#LINK)
 
 ***
