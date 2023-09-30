@@ -1,53 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Campinho Digital - Prompt</title>
-  </head>
-  <body>
-    <main>
-      <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Campinho Digital - Prompt</title>
+</head>
+<body>
+  <main>
+    <header>
       <h1 id="headTitle">Relatório de valores</h1>
-      </header>
-      <form>
-        <fieldset>
-          <legend>Dobro do valor</legend>
-          <button type="button" onclick="dobroNum()">Clique e descubra o dobro do valor</button>
-          </fieldset>
-
-          <fieldset>
-          <legend>Valor total do jantar</legend>
-          <button type="button" onclick="jantarValor()">Clique e descubra o valor total da janta</button>
-          </fieldset>
-
-          <fieldset>
-          <legend>Pizzaria</legend>
-          <button type="button" onclick="contaPizza()">Quanto cada pessoa deve pagar</button>
-          </fieldset>
-      </form>
-      <h2>Resultados</h2>
-      <div id="container">
+    </header>
+     
+      <div id="mainContainer">
+      <h1 id="redAlert">Finalizando a conta!</h1>
+      <button id="opening" type="button" onclick="Modal.open()">Relatório final</button>
+      </div>
+    
+    <h2>RESULTADOS!</h2>
+    <div id="containerResults">
       <div id="dobro" class="resultados">
-        <h1>Dobro</h1><hr>
+        <h1>Dobro</h1>
+        <hr>
 
       </div>
       <div id="jantar" class="resultados">
-        <h1>Jantar</h1><hr>
+        <h1>Jantar</h1>
+        <hr>
 
       </div>
       <div id="pizza" class="resultados">
-        <h1>Pizzaria</h1><hr>
+        <h1>Pizzaria</h1>
+        <hr>
       </div>
     </div>
-    </main>
+  
 
-    <footer>
-      ©Copyright - Campinho Digital 2023 - Gustavo Miguel Oliveira Biscaro
-    </footer>
+  <!-- Implementando o Modal -->
+  <div class="modal-overlay">
+    <div class="modal">
+      <div id="form">
+        <h2>Formulário de ação</h2>
 
-  </body>
-  <script src="./js/main.js"></script>
+        <form action="" onsubmit="Form.submit(event)">
+
+          <div>
+            <h3>O dobro ou nada!</h3>
+            <label class="sr-only" for="description">Valor desejado </label>
+            <input type="number" id="doubleValue" name="doubleValue" placeholder="Valor desejado" />
+          </div>
+
+          <div>
+            <h3>Um jantar bem proveitoso!</h3>
+            <label class="sr-only" for="description">Total Conta(R$)</label>
+            <input type="number" id="dinnerValue" name="dinnerValue" placeholder="Valor final da sua refeição" />
+          </div>
+
+          <div class="input-group actions">
+            <a onclick="Modal.close()" href="#" class="button cancel">Cancelar</a>
+            <button type="button">Registrar requisição!</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+  <footer>
+    ©Copyright - Campinho Digital 2023 - Gustavo Miguel Oliveira Biscaro
+  </footer>
+
+</body>
+<script src="./js/main.js"></script>
+
 </html>
