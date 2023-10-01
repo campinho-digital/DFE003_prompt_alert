@@ -16,9 +16,29 @@ header {
     color: white;
 }
 
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 2px auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#opening {
+    display: flex;
+    margin: 10px 20px 0px 20px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
 #headTitle {
     color: white;
 }
+
 p {
     font-weight: bolder;
     font-size: 1.5em;
@@ -38,18 +58,28 @@ h1 {
     text-align: center;
     font-size: 2em;
 }
+
 h2 {
-    display: block;
-    color: rebeccapurple;
+    color: blueviolet;
+    letter-spacing: -3px;
     font-weight: bolder;
     text-align: center;
     font-size: 2em;
 
-    margin: 2%;
+    margin: 45px 0px 0px 0px;
 }
+
+#redAlert {
+    display: block;
+    width: 16%;
+    color: blueviolet;
+    font-size: 2.0em;
+}
+
 hr {
     border: 2px solid rgb(87, 38, 185);
 }
+
 form {
     display: flex;
     flex-direction: row;
@@ -57,8 +87,9 @@ form {
     align-items: center;
     margin-bottom: 70px;
 }
+
 legend {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 1.5em;
     font-weight: bolder;
 }
@@ -81,12 +112,13 @@ button:hover {
 
 }
 
-#container {
+#containerResults {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
+
 .resultados {
     border: 2px solid black;
     width: 500px;
@@ -94,6 +126,98 @@ button:hover {
     margin: 20px;
     clear: both;
 }
+
+/* Modal */
+.sr-only {
+   
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+ 
+    
+    background-color: rgba(109, 7, 243, 0.5);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999;
+
+
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.modal {
+    background: #F0F2F5;
+    padding: 2.4rem;
+    border: 2px solid black;
+    position: relative;
+    z-index: 1;
+
+}
+
+.div-modal {
+    border: 2px solid black;
+    margin: 10px 15px 10px 15px;
+    padding: 30px;
+    background: blueviolet;
+}
+
+#form h2 {
+    position: relative;
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    bottom: 70px;
+    border: 2px solid rgb(87, 38, 185);
+}
+
+.div-modal h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.div-modal input {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+
+.cancel {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px;
+}
+
+.cancel:hover {
+    color: rgb(87, 38, 185);
+}
+/* Fim do Modal */
 
 footer {
     background: blueviolet;

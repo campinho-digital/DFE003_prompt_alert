@@ -9,9 +9,9 @@
 - [Git e GitHub:](#GIT-GITHUB)
   - [Explicação](#ExplicaGit)
 - [Javascript](#JAVASCRIPT)
-  - [Explicação](#ExplicaJS)
-- [Como linkei o HTML com o JavaScript:](#Ligação)
-  - [Explicação](#ExplicaConexao)
+  - [Explicação](#JAVASCRIPT)
+- [Como linkei o HTML com o JavaScript:](#LINK)
+  - [Explicação](#LINK)
 
 ***
 
@@ -71,7 +71,7 @@ Não era necessário, mas fiz um pull request no meu próprio repositório e ap�
 ## JAVASCRIPT
 Para resolver, fui exercício por exercício, na verdade, antes mesmo de começar tudo, eu já fiz as soluções como funções através do **function** para que elas fossem acionadas somente quando eu quisesse.
 
-## COMO LINKAR O JAVASCRIPT
+## LINK
 Existem maneiras de se fazer isso, no meu caso utilizei o evento "on click" do javascript, em que as funções são acionadas com um clique e com isso disparar um evento para realização das lógicas do programa. Para aparecer de fato no HTML, foi necessário pegar o id de cada elemento e atribuir seu valor no campo determinado, como neste caso, nas **divs**
 
 

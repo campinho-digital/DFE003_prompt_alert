@@ -2,9 +2,42 @@ const valorDobro = document.getElementById("dobro");
 const valorJantar = document.getElementById("jantar");
 const valorPizza = document.getElementById("pizza");
 
+//Abertura e fechamento do Modal
+const Modal = {
+  openDobro(){
+      // Abrir modal
+      // Adicionar a class active ao modal
+      document
+          .querySelector('.modal-overlay')
+          .classList
+          .add('active')
+
+  },
+  openDobro(){
+      // Abrir modal
+      // Adicionar a class active ao modal
+      document
+          .querySelector('.modal-overlay')
+          .classList
+          .add('active')
+
+  },
+
+  close(){
+      // fechar o modal
+      // remover a class active do modal
+      document
+          .querySelector('.modal-overlay')
+          .classList
+          .remove('active')
+  },
+}
+
+
+
 // Elaborar um programa que leia um número e devolva para o usuário o dobro do número informado
 function dobroNum() {
-  let num = prompt("Digite um número e então retornará o dobro");
+  let num = prompt("Digite o valor")
   let dobro = (num *= 2);
 
   if (num == 0) {
@@ -56,3 +89,4 @@ function contaPizza() {
   valorPizza.innerHTML = `<h1>Pizzaria</h1><hr><p>Cada pessoa deverá pagar aproximadamente</p> <span>R$${valorPorPessoa}<span>`;
   }
 }
+
