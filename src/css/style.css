@@ -18,11 +18,7 @@ header {
 
 #mainContainer {
     display: flex;
-<<<<<<< HEAD
     flex-direction: row;
-=======
-    flex-direction: column;
->>>>>>> refs/remotes/origin/Gustavo
     margin: 2px auto;
     align-items: center;
     justify-content: center;
@@ -31,18 +27,16 @@ header {
 
 #opening {
     display: flex;
-<<<<<<< HEAD
     margin: 10px 20px 0px 20px;
     flex-direction: row;
     text-align: center;
     justify-content: center;
     align-items: center;
     width: 20%;
-=======
+
     margin-top: 10px;
     flex-direction: row;
     align-items: flex-end;
->>>>>>> refs/remotes/origin/Gustavo
 }
 
 #headTitle {
@@ -139,11 +133,7 @@ button:hover {
 
 /* Modal */
 .sr-only {
-<<<<<<< HEAD
-   
-=======
     position: absolute;
->>>>>>> refs/remotes/origin/Gustavo
     width: 1px;
     height: 1px;
     padding: 0;
@@ -158,14 +148,7 @@ button:hover {
 .modal-overlay {
     width: 100%;
     height: 100%;
-<<<<<<< HEAD
- 
-    
     background-color: rgba(109, 7, 243, 0.5);
-=======
-
-    background-color: rgba(0, 0, 0, .7);
->>>>>>> refs/remotes/origin/Gustavo
 
     position: fixed;
     top: 0;
@@ -177,37 +160,25 @@ button:hover {
     opacity: 0;
     visibility: hidden;
 
-    z-index: 999;
-<<<<<<< HEAD
+    z-index: 999
 
-
-=======
->>>>>>> refs/remotes/origin/Gustavo
 }
 
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
-<<<<<<< HEAD
-
-=======
->>>>>>> refs/remotes/origin/Gustavo
 }
 
 .modal {
     background: #F0F2F5;
     padding: 2.4rem;
-<<<<<<< HEAD
     border: 2px solid black;
-=======
-
->>>>>>> refs/remotes/origin/Gustavo
     position: relative;
     z-index: 1;
 
 }
 
-<<<<<<< HEAD
+
 .div-modal {
     border: 2px solid black;
     margin: 10px 15px 10px 15px;
@@ -247,8 +218,7 @@ button:hover {
 .cancel:hover {
     color: rgb(87, 38, 185);
 }
-=======
->>>>>>> refs/remotes/origin/Gustavo
+
 /* Fim do Modal */
 
 footer {
