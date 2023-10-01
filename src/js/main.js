@@ -4,6 +4,20 @@ const valorPizza = document.getElementById("pizza");
 
 //Abertura e fechamento do Modal
 const Modal = {
+<<<<<<< HEAD
+  openDobro(){
+=======
+  open(){
+>>>>>>> refs/remotes/origin/Gustavo
+      // Abrir modal
+      // Adicionar a class active ao modal
+      document
+          .querySelector('.modal-overlay')
+          .classList
+          .add('active')
+
+  },
+<<<<<<< HEAD
   openDobro(){
       // Abrir modal
       // Adicionar a class active ao modal
@@ -13,16 +27,9 @@ const Modal = {
           .add('active')
 
   },
-  openDobro(){
-      // Abrir modal
-      // Adicionar a class active ao modal
-      document
-          .querySelector('.modal-overlay')
-          .classList
-          .add('active')
 
-  },
-
+=======
+>>>>>>> refs/remotes/origin/Gustavo
   close(){
       // fechar o modal
       // remover a class active do modal
@@ -30,11 +37,17 @@ const Modal = {
           .querySelector('.modal-overlay')
           .classList
           .remove('active')
+<<<<<<< HEAD
   },
 }
 
 
 
+=======
+  }
+}
+
+>>>>>>> refs/remotes/origin/Gustavo
 // Elaborar um programa que leia um número e devolva para o usuário o dobro do número informado
 function dobroNum() {
   let num = prompt("Digite o valor")
