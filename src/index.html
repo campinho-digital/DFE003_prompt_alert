@@ -8,30 +8,25 @@
   <link rel="stylesheet" href="./css/style.css" />
   <title>Campinho Digital - Prompt</title>
 </head>
-<body>
 
-<main>
-    <header>
-      <h1 id="headTitle">Relatório de valores</h1>
-    </header>
-      <h1>Escolha sua rota</h1>
-      <div id="mainContainer">
-      
-      <button id="opening" type="button" onclick="Modal.openDobro()">Dobro</button>
-      <button id="opening" type="button" onclick="Modal.openDinner()">Jantar</button>
-      <button id="opening" type="button" onclick="Modal.openPizza()">Pizzaria</button>
+<body>
 
   <main>
     <header>
       <h1 id="headTitle">Relatório de valores</h1>
     </header>
-     
-      <div id="mainContainer">
-      <h1 id="redAlert">Finalizando a conta!</h1>
-      <button id="opening" type="button" onclick="Modal.open()">Relatório final</button>
+    <h1>Escolha sua rota</h1>
+    <div id="mainContainer">
 
-      </div>
-    
+      <button id="opening" type="button" onclick="Modal.open()">Dobro</button>
+      <button id="opening" type="button" onclick="">Jantar</button>
+      <button id="opening" type="button" onclick="">Pizzaria</button>
+    </div>
+
+
+
+    </div>
+
     <h2>RESULTADOS!</h2>
     <div id="containerResults">
       <div id="dobro" class="resultados">
@@ -49,30 +44,24 @@
         <hr>
       </div>
     </div>
-  
 
-  <!-- Implementando o Modal -->
 
-  <!-- Dobro -->
-  <div class="modal-overlay">
-    <div class="modal">
-      <div id="form">
-        <h2>Dobro do valor</h2>
-        <form action="" onsubmit="Form.submit(event)">
+    <!-- Implementando o Modal -->
 
-  
-    
+    <!-- Dobro -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <div id="form">
+          <h2>Dobro do valor</h2>
+            <input type="number" name="doubleValue" id="doubleValue" min="0" placeholder="Digite o dobro do valor por favor">
             <a onclick="Modal.close()" href="#" class="button cancel">Cancelar</a>
             <button type="button">Registrar requisição!</button>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
-  </div>
+    </div>
 
-  <!-- Jantar -->
-
-</main>
+  </main>
 
   <footer>
     ©Copyright - Campinho Digital 2023 - Gustavo Miguel Oliveira Biscaro
