@@ -19,8 +19,8 @@
     <div id="mainContainer">
 
       <button id="opening" type="button" onclick="Modal.open()">Dobro</button>
-      <button id="opening" type="button" onclick="">Jantar</button>
-      <button id="opening" type="button" onclick="">Pizzaria</button>
+      <button id="opening" type="button" onclick="Modal.openDinner()">Jantar</button>
+      <button id="opening" type="button" onclick="Modal.openPizza()">Pizzaria</button>
     </div>
 
 
@@ -54,12 +54,38 @@
         <div id="form">
           <h2>Dobro do valor</h2>
             <input type="number" name="doubleValue" id="doubleValue" min="0" placeholder="Digite o dobro do valor por favor">
-            <a onclick="Modal.close()" href="#" class="button cancel">Cancelar</a>
-            <button type="button">Registrar requisição!</button>
+            <a onclick="Modal.closeDouble()" href="#" class="button cancel">Cancelar</a>
+            <button onclick="dobroNum()" type="button">Registrar requisição!</button>
         </div>
       </div>
     </div>
+   
+    <div class="modal-overlay-dinner">
+      <div class="modal">
+        <div id="form">
+          <h2>Jantar especial</h2>
+            <input type="number" name="specialDinner" id="specialDinner" min="0" placeholder="Digite o valor total da refeição">
+            <input type="number" name="porcentagemAtendimento" id="porcentagemAtendimento" min="0" placeholder="Digite o quanto (%) o seu atendimento valeu">
+
+            <a onclick="Modal.closeDinner()" href="#" class="button cancel">Cancelar</a>
+            <button onclick="jantarValor()" type="button">Registrar requisição!</button>
+        </div>
+      </div>
     </div>
+  
+
+    <div class="modal-overlay-pizza">
+      <div class="modal">
+        <div id="form">
+          <h2>Pizzaria</h2>
+            <input type="number" name="chequeTotal" id="chequeTotal" min="0" placeholder="Digite o valor total do cheque, por favor">
+            <input type="number" name="qtdPessoa" id="qtdPessoa" min="0" placeholder="Quantas pessoas almoçaram?">
+            <a onclick="Modal.closePizza()" href="#" class="button cancel">Cancelar</a>
+            <button onclick="contaPizza()" type="button">Registrar requisição!</button>
+        </div>
+      </div>
+    </div>
+  
 
   </main>
 

@@ -1,6 +1,17 @@
+// DIVs
 const valorDobro = document.getElementById("dobro");
 const valorJantar = document.getElementById("jantar");
 const valorPizza = document.getElementById("pizza");
+
+//dobro
+var dobro = document. querySelector("#doubleValue");
+//jantar
+var specialDinner = document.querySelector("#specialDinner");
+var valorPorcentagem = document.querySelector("#porcentagemAtendimento");
+
+//pizzaria
+var chequeTotal = document.querySelector("#chequeTotal");
+var qtdPessoa = document.querySelector("#qtdPessoa");
 
 
 const Modal = {
@@ -13,68 +24,97 @@ const Modal = {
           .add('active')
   },
 
-  close(){
+  openDinner(){
+      // Abrir modal
+      // Adicionar a class active ao modal
+      document
+          .querySelector('.modal-overlay-dinner')
+          .classList
+          .add('active')
+  },
+
+  openPizza(){
+      // Abrir modal
+      // Adicionar a class active ao modal
+      document
+          .querySelector('.modal-overlay-pizza')
+          .classList
+          .add('active')
+  },
+
+  closeDouble(){
       // fechar o modal
       // remover a class active do modal
       document
           .querySelector('.modal-overlay')
           .classList
           .remove('active')
-  }
+  },
+
+  closeDinner(){
+      // fechar o modal
+      // remover a class active do modal
+      document
+          .querySelector('.modal-overlay-dinner')
+          .classList
+          .remove('active')
+  },
+  closePizza(){
+      // fechar o modal
+      // remover a class active do modal
+      document
+          .querySelector('.modal-overlay-pizza')
+          .classList
+          .remove('active')
+  },
+
 }
 
 // Elaborar um programa que leia um número e devolva para o usuário o dobro do número informado
 function dobroNum() {
-  let num = prompt("Digite o valor")
-  let dobro = (num *= 2)
 
-  if (num == 0) {
-    return alert("Digite um valor válido");
-  } else {
-    alert(`O dobro do valor é igual a ${dobro}`);
+    var numero = dobro.value;
+    numero = parseInt(numero)
+    var multiplicado = numero *= 2;
 
-    valorDobro.innerHTML = `<h1>Dobro</h1><hr><p>O dobro do valor é</p> <span>${dobro}<span>`;
+    Modal.closeDouble();
+
+   valorDobro.innerHTML = `<h1>Dobro</h1><hr><p>O dobro do valor é</p> <span>${multiplicado}<span>`;
   }
-}
+
 
 // Elabore um programa que calcule o valor do jantar, sendo o valor total do jantar composto pela conta junto com a taxa de atendimento do garçom.
 
 function jantarValor() {
-  let valor = prompt("Quanto ficou o valor do jantar?");
+  //console.log(specialDinner.value)
+  var valorAtendimento = porcentagemAtendimento.value;
+  var totalRefeicao = specialDinner.value;
 
-  if (valor == 0) {
-    return alert("Digite um valor válido");
-  } else {
-    valor = parseFloat(valor)
-    custoGarçom = 0.25 * valor;
-    custoGarçom = parseFloat(custoGarçom);
+  valorAtendimento = parseFloat(valorAtendimento)
+  totalRefeicao = parseFloat(totalRefeicao)
+  
+  let porcentagem = (valorAtendimento/100) * 100;
+  let preçoFinal = ((valorAtendimento/100) * totalRefeicao) + totalRefeicao;
 
-    let custoComposto = valor + custoGarçom;
-    custoComposto = parseFloat(custoComposto);
+  Modal.closeDinner();
 
-    alert("O valor final do jantar é de: " + "R$" + custoComposto);
-
-    valorJantar.innerHTML = `<h1>Jantar</h1><hr><p>O valor final do jantar com 25% do valor é</p> <span>R$${custoComposto}<span>`;
+   valorJantar.innerHTML = `<h1>Jantar</h1><hr><p>O valor FINAL  do jantar com ${porcentagem}% do valor é</p> <span>R$ ${preçoFinal}<span>`;
   }
-}
+
 // Elabore um programa para uma pizzaria, o qual leia o valor total de uma conta e quantos clientes vão pagá-la. Calcule e informe o valor a ser pago por cliente.
 function contaPizza() {
-  let valorTotal = prompt("Informe o valor total da conta");
-  let pessoas = prompt("Informe a quantidade de pessoas");
+    var chequeFinal = chequeTotal.value;
+    var pessoas = qtdPessoa.value;
 
-  if(valorTotal == 0 || pessoas == 0) {
-    return alert("Digite um valor válido");
-  } else {
+    chequeFinal = parseFloat(chequeFinal)
+    pessoas = parseInt(pessoas)
 
-  valorTotal = parseFloat(valorTotal);
-  pessoas = parseInt(pessoas);
+    let valorFinalPorPessoa = chequeFinal / pessoas;
+    valorFinalPorPessoa = Math.round(valorFinalPorPessoa)
 
-  let valorPorPessoa = valorTotal / pessoas;
-  valorPorPessoa = Math.round(valorPorPessoa);
+    Modal.closePizza();
 
-  alert(`Cada pessoa pagará aproximadamente R$${valorPorPessoa}`);
-
-  valorPizza.innerHTML = `<h1>Pizzaria</h1><hr><p>Cada pessoa deverá pagar aproximadamente</p> <span>R$${valorPorPessoa}<span>`;
+    valorPizza.innerHTML = `<h1>Pizzaria</h1><hr><p>Cada pessoa deverá pagar aproximadamente</p> <span>R$${valorFinalPorPessoa}<span>`;
   }
-}
+
 

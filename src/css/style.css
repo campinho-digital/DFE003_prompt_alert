@@ -164,7 +164,56 @@ button:hover {
 
 }
 
+
+.modal-overlay-dinner {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(109, 7, 243, 0.5);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999
+
+}
+
+.modal-overlay-pizza {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(109, 7, 243, 0.5);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    z-index: 999
+
+}
+
 .modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay-dinner.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay-pizza.active {
     opacity: 1;
     visibility: visible;
 }
@@ -185,6 +234,7 @@ button:hover {
     padding: 30px;
     background: blueviolet;
 }
+
 
 #form h2 {
     display: flex;
